@@ -22,7 +22,7 @@ def emotion_detector(text_to_analyze):
     # Extract the emotion predictions
     if 'emotionPredictions' in response_json:
         emotions = response_json['emotionPredictions'][0]['emotion']
-        
+  
         # Find the dominant emotion
         dominant_emotion = max(emotions, key=emotions.get)
         
